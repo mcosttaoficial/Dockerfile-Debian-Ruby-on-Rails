@@ -31,8 +31,8 @@ RUN bundle update --bundler
 RUN rails db:create
 RUN rails db:migrate
 
-# Expose a porta 3000
+# Expose port 3000
 EXPOSE 3000
 
-# Inicie o servidor Rails
+# Start Server Rails
 CMD ["rails", "server", "-b", "0.0.0.0"]
